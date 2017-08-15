@@ -4,8 +4,7 @@
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -w *.*.ts --exec ts-node ./src/server",
-    "startss": "./node_modules/typescript/bin/tsc && ./node_modules/nodemon/bin/nodemon.js index.js",
+    "start": "./node_modules/typescript/bin/tsc && ./node_modules/nodemon/bin/nodemon.js index.js",
     "prestart:prod": "./node_modules/typescript/bin/tsc",
     "start:prod": "./node_modules/nodemon/bin/nodemon.js dist/server.js"
   },
