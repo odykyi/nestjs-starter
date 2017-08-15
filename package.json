@@ -4,23 +4,25 @@
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart:prod": "tsc",
-    "start:prod": "node dist/server.js"
+    "start": "./node_modules/typescript/bin/tsc && ./node_modules/nodemon/bin/nodemon.js index.js",
+    "prestart:prod": "./node_modules/typescript/bin/tsc",
+    "start:prod": "./node_modules/nodemon/bin/nodemon.js dist/server.js"
   },
   "dependencies": {
-    "@nestjs/common": "*",
-    "@nestjs/core": "*",
-    "@nestjs/microservices": "*",
-    "@nestjs/testing": "*",
-    "@nestjs/websockets": "*",
+    "@nestjs/common": "^3.0.3",
+    "@nestjs/core": "^3.0.5",
+    "@nestjs/microservices": "^3.0.2",
+    "@nestjs/testing": "^3.0.3",
+    "@nestjs/websockets": "^3.0.1",
+    "@types/node": "^8.0.22",
+    "nodemon": "^1.11.0",
     "redis": "^2.7.1",
     "reflect-metadata": "^0.1.10",
-    "rxjs": "^5.4.0",
+    "rxjs": "^5.4.3",
+    "ts-node": "^3.3.0",
     "typescript": "^2.2.1"
   },
   "devDependencies": {
-    "@types/node": "^7.0.5",
-    "ts-node": "^2.1.0"
+    "@types/node": "^8.0.22"
   }
 }
