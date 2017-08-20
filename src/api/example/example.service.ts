@@ -1,7 +1,7 @@
 import { Component } from '@nestjs/common';
 import { HttpException } from '@nestjs/core';
 
-// TODO include repisotory  nestjs-starter/src/example/additionalLogic/example.repository.ts
+// TODO include repisotory  nestjs-starter/src/example/repository/example.repository.ts
 // and run it
 
 @Component()
